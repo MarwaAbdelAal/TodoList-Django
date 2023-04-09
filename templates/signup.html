@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+
+{% block content %}
+<h1>Sign Up</h1>
+<form method="POST">
+    {% csrf_token %}
+    <table>
+            {{ form|bootstrap }}
+            <!-- {{ form.as_table }} -->
+        </table>
+        <input type="submit" value="Sign Up">
+        <!-- {{ form }} -->
+
+        <!-- <label for="username">Username</label> -->
+        <!-- <input type="text" name="username" id="username" value="{{ username }}"> -->
+        <!-- <label for="password">Password</label> -->
+        <!-- <input type="password" name="password" id="password"> -->
+        <!-- <input type="submit" value="Sign Up"> -->
+    </form>
+{% endblock %}
