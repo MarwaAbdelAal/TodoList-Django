@@ -25,17 +25,20 @@ This is a simple ToDo list application using Django framework. After user login 
 ## Installation
 
 - Clone the repository
+
 ```bash
-git clone 
+git clone https://github.com/MarwaAbdelAal/TodoList-Django.git
 ```
 
 - Create a virtual environment and activate it
+
 ```bash
 python3 -m venv env
 source env/bin/activate
 ```
-```
+
 - Install the requirements
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -43,6 +46,7 @@ pip install -r requirements.txt
 ## Usage
 
 - Run the server
+
 ```bash
 python manage.py runserver
 ```
