@@ -5,15 +5,6 @@ from django.contrib.auth.models import User
 
 class Todo(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
-    # gradeChoices = [
-        # ('A+', '100'),
-    #     # ('B+', '85'),
-    # ]
-    # grade = models.CharField(max_length=2, choices=gradeChoices, null=True, blank=True)
-    # description = models.TextField()
-    # email = models.EmailField()
-    # phone = models.models.PhoneNumberField(("Phone Number"))
-    # image = models.ImageField(upload_to='images/')
     title = models.CharField(max_length=150)
     is_completed = models.BooleanField(default=False)
     createdAt = models.DateTimeField(auto_now_add=True, null=True, blank=True)

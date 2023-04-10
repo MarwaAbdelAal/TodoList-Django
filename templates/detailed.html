@@ -1,5 +1,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {{ todo.title}} ||  created At: {{todo.created_at}}
+
+<div class="container w-60 m-auto p-5 bg-light mt-5 mb-5">
+
+    <h1 class="my-5 display-5 fw-bold ls-tight">
+        <span style="color: hsl(218deg 40.88% 48.24%)">{{ todo.title }}</span>
+    </h1>
+
+    <div class="container todos pt-5 pb-5">
+        <ul>
+            <li>
+                <section class="todo">
+                    <div class="container">
+                        <div class="row p-2 todoContainer">
+                            <div class="col-lg-12 col-md-12 col-xs-12 element p-4">
+                                <span class="me-4"> completed: </span> 
+                                {% if todo.is_completed %}
+                                    <i class="fas fa-check-circle"></i>
+                                {% else %}
+                                    <i class="fas fa-times-circle"></i>
+                                {% endif %}
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
 {% endblock %}

@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'bootstrapform',
-    'django_filters'
+    'django_filters',
+    'fontawesomefree'
 ]
 
 MIDDLEWARE = [

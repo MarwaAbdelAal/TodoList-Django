@@ -9,5 +9,6 @@ urlpatterns = [
     path('deleteTodo/<str:id>', views.deleteTodo, name='deleteTodo'),
     path('signup', views.createUser, name='signup'),
     path('login', views.login, name='login'),
-    path('logout', views.logout, name='logout')
+    path('logout', views.logout, name='logout'),
+    path('completedTodos', views.completedTodos, name='completedTodos'),
 ]

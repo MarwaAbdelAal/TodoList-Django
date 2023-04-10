@@ -1,22 +1,21 @@
 {% extends 'base.html' %}
-{% load bootstrap %}
 
 
 {% block content %}
-<h1>Sign Up</h1>
-<form method="POST">
-    {% csrf_token %}
-    <table>
-            {{ form|bootstrap }}
-            <!-- {{ form.as_table }} -->
-        </table>
-        <input type="submit" value="Sign Up">
-        <!-- {{ form }} -->
 
-        <!-- <label for="username">Username</label> -->
-        <!-- <input type="text" name="username" id="username" value="{{ username }}"> -->
-        <!-- <label for="password">Password</label> -->
-        <!-- <input type="password" name="password" id="password"> -->
-        <!-- <input type="submit" value="Sign Up"> -->
-    </form>
+<h1 class="my-3 display-5 fw-bold ls-tight text-center">
+    <span style="color: hsl(218deg 40.88% 48.24%)">Sign Up</span>
+</h1>
+
+<form method="POST" class="container-form">
+    {% csrf_token %}
+
+    <table class="form-table">
+        {{form.as_table}}
+    </table>
+
+    <button class="btn btn-primary submitTodo" type="submit">Sign Up</button>
+</form>
+
+
 {% endblock %}
