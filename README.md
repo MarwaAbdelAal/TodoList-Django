@@ -7,10 +7,10 @@ This is a simple ToDo list application using Django framework. After user login 
 ## API Endpoints
     
 - `GET /` - Get all todos
-- `GET /detailed/<str:id>` - Get detailed todo
-- `POST /createTodo/'` - Create a todo
-- `POST /updateTodo/<str:id>` - Update a todo
-- `DELETE /deleteTodo/<str:id>` - Delete a todo
+- `GET /detailed/:id` - Get detailed todo
+- `POST /createTodo/` - Create a todo
+- `POST /updateTodo/:id` - Update a todo
+- `DELETE /deleteTodo/:id` - Delete a todo
 - `POST /signup` - Create a user
 - `POST /login` - Login a user
 - `GET /logout` - Logout a user
